@@ -3,12 +3,17 @@
 This repository intents to be a collection of problems for propositional logic in
 [TPTP](http://www.cs.miami.edu/~tptp/TPTP/SyntaxBNF.html) format.
 
+* Download to preview the problems: [PDF Version][pdf]
+
+[pdf]: https://github.com/jonaprieto/prop-pack/releases/download/20170317/prop-pack.pdf
+
 The problems have been taken from:
 
   - Car Alastair. *[The Natural Deduction Pack][nd]*. 2007.
   <!-- - van Dalen, Dirk. \emph{Logic and Structure}. 4th ed. Springer, 2004. -->
 
 [nd]: http://logicmanual.philosophy.ox.ac.uk/carr/NDpack.pdf
+
 
 ### Problems
 
