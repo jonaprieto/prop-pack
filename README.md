@@ -10,9 +10,9 @@ The problems have been taken from:
 
 [nd]: http://logicmanual.philosophy.ox.ac.uk/carr/NDpack.pdf
 
-## Problems
+### Problems
 
-### Conjunction
+#### Conjunction
 
   1. [P , Q ⊢ P ⋀ Q][conj-1]
   2. [(P1 ⋀ P2) ⋀ P3  ⊢ P2][conj-2]
@@ -29,7 +29,7 @@ The problems have been taken from:
 [conj-6]: https://github.com/jonaprieto/ndpack/blob/master/problems/conjunction/conj-6.tptp
 
 
-### Implication
+#### Implication
 
   1. [ ⊢ P ⇒ P][impl-1]
   2. [ ⊢ P ⇒ (Q ⇒ P)][impl-2]
@@ -72,7 +72,7 @@ The problems have been taken from:
 [impl-17]: https://github.com/jonaprieto/ndpack/blob/master/problems/implication/impl-17.tptp
 [impl-18]: https://github.com/jonaprieto/ndpack/blob/master/problems/implication/impl-18.tptp
 
-### Disjunction
+#### Disjunction
 
   1. [P ∨ Q  ⊢ Q ∨ P][disj-1]
   2. [P ∨ Q ⊢ P ∨ (Q ∨ R)][disj-2]
@@ -116,7 +116,7 @@ The problems have been taken from:
 [disj-15]: https://github.com/jonaprieto/ndpack/blob/master/problems/disjunction/disj-15.tptp
 
 
-### Biconditional
+#### Biconditional
 
   1. [P ⇔ Q ⊢ Q  ⇔ P][bicond-1]
   2. [P , (P  ⇔ Q) ⇔ R ⊢ Q ⇔ R][bicond-2]
@@ -150,7 +150,7 @@ The problems have been taken from:
 [bicond-13]: https://github.com/jonaprieto/ndpack/blob/master/problems/biconditional/bicond-13.tptp
 
 
-### Negation
+#### Negation
 
   *Negation introduction*
 
