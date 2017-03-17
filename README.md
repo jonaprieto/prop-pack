@@ -5,8 +5,10 @@ This repository intents to be a collection of problems for logic in
 
 The problems have been taken from:
 
-  - Car Alastair. *The Natural Deduction Pack*. 2007.
+  - Car Alastair. *[The Natural Deduction Pack][nd]*. 2007.
   <!-- - van Dalen, Dirk. \emph{Logic and Structure}. 4th ed. Springer, 2004. -->
+
+[nd]: http://logicmanual.philosophy.ox.ac.uk/carr/NDpack.pdf
 
 ## Problems
 
