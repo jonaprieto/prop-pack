@@ -1,6 +1,6 @@
 % -----------------------------------------------------------------------------
-fof(a1 , axiom, ¬ P => Q).
-fof(a2 , axiom, R | ¬ Q).
+fof(a1 , axiom, ~ P => Q).
+fof(a2 , axiom, R | ~ Q).
 fof(a3 , axiom, P => (Q1 | Q2)).
-fof(a4 , axiom, ¬ R & ¬ Q2).
+fof(a4 , axiom, ~ R & ~ Q2).
 fof(goal, conjecture, Q1).
