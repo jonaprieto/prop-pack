@@ -1,6 +1,6 @@
-# ndpack
+# Prop-Pack
 
-This repository intents to be a collection of problems for logic in
+This repository intents to be a collection of problems for propositional logic in
 [TPTP](http://www.cs.miami.edu/~tptp/TPTP/SyntaxBNF.html) format.
 
 The problems have been taken from:
