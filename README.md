@@ -152,47 +152,47 @@ The problems have been taken from:
 
   *Negation introduction*
 
-  1. P  ⊢  ¬ (¬ P)
-  2. ¬ P  ⊢  ¬ (P ⋀ Q)
-  3. P ⇒  ¬ P  ⊢  ¬ P
-  4. ¬ (P ⇒ Q) ⊢ ¬ Q
-  5. ¬ (P ⋀ Q)  ⊢ P ⇒  ¬ Q
-  6. P ⇒ Q ⊢ ¬ Q ⇒ ¬ P
-  7. ⊢ ¬ ((P ⋀ ¬ P) ∨ (Q ⋀ ¬ Q))
-  8. ¬ (P ∨ Q) ⊢ ¬ P ⋀ ¬ Q
-  9. ¬ P ∨ ¬ Q ⊢ ¬ (P ⋀ Q)
+  1. [P  ⊢  ¬ (¬ P)][neg-1]
+  2. [¬ P  ⊢  ¬ (P ⋀ Q)][neg-2]
+  3. [P ⇒  ¬ P  ⊢  ¬ P][neg-3]
+  4. [¬ (P ⇒ Q) ⊢ ¬ Q][neg-4]
+  5. [¬ (P ⋀ Q)  ⊢ P ⇒  ¬ Q][neg-5]
+  6. [P ⇒ Q ⊢ ¬ Q ⇒ ¬ P][neg-6]
+  7. [⊢ ¬ ((P ⋀ ¬ P) ∨ (Q ⋀ ¬ Q))][neg-7]
+  8. [¬ (P ∨ Q) ⊢ ¬ P ⋀ ¬ Q][neg-8]
+  9. [¬ P ∨ ¬ Q ⊢ ¬ (P ⋀ Q)][neg-9]
 
   *Ex falso quodlibet*
 
-  10. ¬ P  ⊢ P ⇒ Q
-  11. P ⋀  ¬ P  ⊢ Q
-  12. P ∨ Q  ⊢  ¬ P ⇒ Q
-  13. P ⇒ Q , P ⋀  ¬ Q  ⊢ R
-  14. P ∨ Q , P ⇔ R , ¬ (P ⋀ Q)  ⊢ R
+  10. [¬ P  ⊢ P ⇒ Q][neg-10]
+  11. [P ⋀  ¬ P  ⊢ Q][neg-11]
+  12. [P ∨ Q  ⊢  ¬ P ⇒ Q][neg-12]
+  13. [P ⇒ Q , P ⋀  ¬ Q  ⊢ R][neg-13]
+  14. [P ∨ Q , P ⇔ R , ¬ (P ⋀ Q)  ⊢ R][neg-14]
 
   *Indirect proofs*
 
-  15. ¬ (¬ P)  ⊢ P
-  16.  ⊢ P ∨  ¬ P
-  17. ¬ P ⇒ Q  ⊢ P ∨ Q
-  18. ¬ (¬ P ∨ ¬ Q) ⊢ P ⋀ Q
-  19. ¬ (P ⋀ Q) ⊢ ¬ P ∨ ¬ Q
+  15. [¬ (¬ P)  ⊢ P][neg-15]
+  16. [ ⊢ P ∨  ¬ P][neg-16]
+  17. [¬ P ⇒ Q  ⊢ P ∨ Q][neg-17]
+  18. [¬ (¬ P ∨ ¬ Q) ⊢ P ⋀ Q][neg-18]
+  19. [¬ (P ⋀ Q) ⊢ ¬ P ∨ ¬ Q][neg-19]
 
   *Mixed problems*
 
-  20. ¬ (P ⇒ Q) ⊢ P
-  21. (P ⇒ Q) ⇒ P ⊢ P
-  22. P ⇔ ¬ (¬ Q) ⊢ P ⇔ Q
-  23. (P ⇒ Q) ⇒ Q ⊢ ¬ Q ⇒ P
-  24. ¬ P ⋀ ¬ Q ⊢ ¬ (P ∨ Q)
-  25. ⊢ P ∨ (P ⇒ Q)
-  26. ⊢ (P ⇒ Q) ∨ (Q ⇒ R)
-  27. ¬ P ⇒ Q , R ∨ ¬ Q , P ⇒ (Q1 ∨ Q2) , ¬ R ⋀ ¬ Q2 ⊢ Q1
-  28. P ⇒ (Q ∨ R) ⊢ (P ⇒ Q) ∨ (P  ⇒ R)
-  29. ⊢ ¬ (P ⋀ Q) ⇔ (¬ P  ∨ ¬ Q)
-  30. ¬ (¬ (¬ P))  ⊢  (¬ P)
-  31. P  ⊢  ¬ (¬ P)
-  32. ¬ (¬ P) ∧ ¬ (¬ Q) ⊢ P ∧ Q
+  20. [¬ (P ⇒ Q) ⊢ P][neg-20]
+  21. [(P ⇒ Q) ⇒ P ⊢ P][neg-21]
+  22. [P ⇔ ¬ (¬ Q) ⊢ P ⇔ Q][neg-22]
+  23. [(P ⇒ Q) ⇒ Q ⊢ ¬ Q ⇒ P][neg-23]
+  24. [¬ P ⋀ ¬ Q ⊢ ¬ (P ∨ Q)][neg-24]
+  25. [⊢ P ∨ (P ⇒ Q)][neg-25]
+  26. [⊢ (P ⇒ Q) ∨ (Q ⇒ R)][neg-26]
+  27. [¬ P ⇒ Q , R ∨ ¬ Q , P ⇒ (Q1 ∨ Q2) , ¬ R ⋀ ¬ Q2 ⊢ Q1][neg-27]
+  28. [P ⇒ (Q ∨ R) ⊢ (P ⇒ Q) ∨ (P  ⇒ R)][neg-28]
+  29. [⊢ ¬ (P ⋀ Q) ⇔ (¬ P  ∨ ¬ Q)][neg-29]
+  30. [¬ (¬ (¬ P))  ⊢  (¬ P)][neg-30]
+  31. [P  ⊢  ¬ (¬ P)][neg-31]
+  32. [¬ (¬ P) ∧ ¬ (¬ Q) ⊢ P ∧ Q][neg-32]
 
 
 [neg-1]: https://github.com/jonaprieto/ndpack/blob/master/problems/negation/neg-1.tptp
