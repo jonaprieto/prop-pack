@@ -72,30 +72,30 @@ The problems have been taken from:
 
 ### Disjunction
 
-  1. P ∨ Q  ⊢ Q ∨ P
-  2. P ∨ Q ⊢ P ∨ (Q ∨ R)
-  3. P ∨ (Q ∨ R) ⊢ P ∨ (Q ∨ R)
-  4. (P ∨ Q) ∨ (R ∨ P1) ⊢ (P ∨ P1) ∨ (R ∨ Q)
+  1. [P ∨ Q  ⊢ Q ∨ P][disj-1]
+  2. [P ∨ Q ⊢ P ∨ (Q ∨ R)][disj-2]
+  3. [P ∨ (Q ∨ R) ⊢ P ∨ (Q ∨ R)][disj-3]
+  4. [(P ∨ Q) ∨ (R ∨ P1) ⊢ (P ∨ P1) ∨ (R ∨ Q)][disj-4]
 
   *Mixed problems with conjunction*
 
-  5. P ⋀ (Q ∨ R) ⊢ (P ⋀ Q) ∨ (P ⋀ R)
-  6. (P ∨ Q) ⋀ (P ∨ R) ⊢ P ∨ (Q ⋀ R)
-  7. (P ⋀ Q) ∨ (P ⋀ R) ⊢ P ⋀ (Q ∨ R)
-  8. P ∨ (Q ⋀ R) ⊢ (P ∨ Q) ⋀ (P ∨ R)
+  5. [P ⋀ (Q ∨ R) ⊢ (P ⋀ Q) ∨ (P ⋀ R)][disj-5]
+  6. [(P ∨ Q) ⋀ (P ∨ R) ⊢ P ∨ (Q ⋀ R)][disj-6]
+  7. [(P ⋀ Q) ∨ (P ⋀ R) ⊢ P ⋀ (Q ∨ R)][disj-7]
+  8. [P ∨ (Q ⋀ R) ⊢ (P ∨ Q) ⋀ (P ∨ R)][disj-8]
 
   *Mixed problems with implication*
 
-  9. (P ⇒ Q) ∨ Q ⊢ P ⇒ Q
-  10. P ∨ Q  ⊢ (P ⇒ Q) ⇒ Q
-  11. (P ⇒ Q) ⇒ (P ⇒ R) ⊢ (P ∨ R) ⇒ (Q ⇒ R)
-  12. (P ⇒ Q) ∨ (P ⇒ R) ⊢ P ⇒ (Q ∨ R)
+  9. [(P ⇒ Q) ∨ Q ⊢ P ⇒ Q][disj-9]
+  10. [P ∨ Q  ⊢ (P ⇒ Q) ⇒ Q][disj-10]
+  11. [(P ⇒ Q) ⇒ (P ⇒ R) ⊢ (P ∨ R) ⇒ (Q ⇒ R)][disj-11]
+  12. [(P ⇒ Q) ∨ (P ⇒ R) ⊢ P ⇒ (Q ∨ R)][disj-12]
 
   *Mixed problems with conjunction and implication*
 
-  13. (P ⇒ Q) ⋀ (Q ⇒ P) ⊢ (P ∨ Q) ⇒ (P ⋀ Q)
-  14. (P ∨ Q) ⇒ (P ⋀ Q) ⊢ (P ⇒ Q) ⋀ (Q ⇒ P)
-  15. (Q ⇒ R) ⋀ (Q ∨ P) ⊢ (P ⇒ Q) ⇒ (R ⋀ R)
+  13. [(P ⇒ Q) ⋀ (Q ⇒ P) ⊢ (P ∨ Q) ⇒ (P ⋀ Q)][disj-13]
+  14. [(P ∨ Q) ⇒ (P ⋀ Q) ⊢ (P ⇒ Q) ⋀ (Q ⇒ P)][disj-14]
+  15. [(Q ⇒ R) ⋀ (Q ∨ P) ⊢ (P ⇒ Q) ⇒ (R ⋀ R)][disj-15]
 
 [disj-1]: https://github.com/jonaprieto/ndpack/blob/master/problems/disjunction/disj-1.tptp
 [disj-2]: https://github.com/jonaprieto/ndpack/blob/master/problems/disjunction/disj-2.tptp
@@ -116,22 +116,22 @@ The problems have been taken from:
 
 ### Biconditional
 
-  1. P ⇔ Q ⊢ Q  ⇔ P
-  2. P , (P  ⇔ Q) ⇔ R ⊢ Q ⇔ R
-  3. ⊢ (P  ⇔ Q) ⇔ (Q ⇔ P)
+  1. [P ⇔ Q ⊢ Q  ⇔ P][bicond-1]
+  2. [P , (P  ⇔ Q) ⇔ R ⊢ Q ⇔ R][bicond-2]
+  3. [⊢ (P  ⇔ Q) ⇔ (Q ⇔ P)][bicond-3]
 
   *Mixed problems*
 
-  4. (P ∨ Q)  ⇔ Q ⊢ P ⇒ Q
-  5. (P ⋀ Q)  ⇔ P ⊢ P ⇒ Q
-  6. P ⇒ Q ⊢ (P ∨ Q)  ⇔ Q
-  7. P ⇒ Q ⊢ (P ⋀ Q)  ⇔ P
-  8. (P ⇒ Q) ⋀ (Q ⇒ P) ⊢ P  ⇔ Q
-  9. ⊢ (P ⋀ Q) ⇒ ((P ⇒ Q) ⇒ P)
-  10. ⊢ ((P ⇒ Q) ⇒ P) ⇒ (P  ⇔ Q)
-  11. ((P ∨ Q) ⇔ Q) ⇔ P ⊢ P  ⇔ Q
-  12. P ⇒ (Q ⇔ R) ⊢ (P ⋀ Q) ⇔ (P ⋀ R)
-  13. ⊢ (P ⋀ (Q ∨ R)) ⇔ ((P ∨ Q) ⋀ (P ∨ R))
+  4. [(P ∨ Q)  ⇔ Q ⊢ P ⇒ Q][bicond-4]
+  5. [(P ⋀ Q)  ⇔ P ⊢ P ⇒ Q][bicond-5]
+  6. [P ⇒ Q ⊢ (P ∨ Q)  ⇔ Q][bicond-6]
+  7. [P ⇒ Q ⊢ (P ⋀ Q)  ⇔ P][bicond-7]
+  8. [(P ⇒ Q) ⋀ (Q ⇒ P) ⊢ P  ⇔ Q][bicond-8]
+  9. [⊢ (P ⋀ Q) ⇒ ((P ⇒ Q) ⇒ P)][bicond-9]
+  10. [⊢ ((P ⇒ Q) ⇒ P) ⇒ (P  ⇔ Q)][bicond-10]
+  11. [((P ∨ Q) ⇔ Q) ⇔ P ⊢ P  ⇔ Q][bicond-11]
+  12. [P ⇒ (Q ⇔ R) ⊢ (P ⋀ Q) ⇔ (P ⋀ R)][bicond-12]
+  13. [⊢ (P ⋀ (Q ∨ R)) ⇔ ((P ∨ Q) ⋀ (P ∨ R))][bicond-13]
 
 [bicond-1]: https://github.com/jonaprieto/ndpack/blob/master/problems/biconditional/bicond-1.tptp
 [bicond-2]: https://github.com/jonaprieto/ndpack/blob/master/problems/biconditional/bicond-2.tptp
@@ -195,34 +195,34 @@ The problems have been taken from:
   32. ¬ (¬ P) ∧ ¬ (¬ Q) ⊢ P ∧ Q
 
 
-  [neg-1]: https://github.com/jonaprieto/ndpack/blob/master/problems/negation/neg-1.tptp
-  [neg-2]: https://github.com/jonaprieto/ndpack/blob/master/problems/negation/neg-2.tptp
-  [neg-3]: https://github.com/jonaprieto/ndpack/blob/master/problems/negation/neg-3.tptp
-  [neg-4]: https://github.com/jonaprieto/ndpack/blob/master/problems/negation/neg-4.tptp
-  [neg-5]: https://github.com/jonaprieto/ndpack/blob/master/problems/negation/neg-5.tptp
-  [neg-6]: https://github.com/jonaprieto/ndpack/blob/master/problems/negation/neg-6.tptp
-  [neg-7]: https://github.com/jonaprieto/ndpack/blob/master/problems/negation/neg-7.tptp
-  [neg-8]: https://github.com/jonaprieto/ndpack/blob/master/problems/negation/neg-8.tptp
-  [neg-9]: https://github.com/jonaprieto/ndpack/blob/master/problems/negation/neg-9.tptp
-  [neg-10]: https://github.com/jonaprieto/ndpack/blob/master/problems/negation/neg-10.tptp
-  [neg-11]: https://github.com/jonaprieto/ndpack/blob/master/problems/negation/neg-11.tptp
-  [neg-12]: https://github.com/jonaprieto/ndpack/blob/master/problems/negation/neg-12.tptp
-  [neg-13]: https://github.com/jonaprieto/ndpack/blob/master/problems/negation/neg-13.tptp
-  [neg-1]: https://github.com/jonaprieto/ndpack/blob/master/problems/negation/neg-1.tptp
-  [neg-2]: https://github.com/jonaprieto/ndpack/blob/master/problems/negation/neg-2.tptp
-  [neg-3]: https://github.com/jonaprieto/ndpack/blob/master/problems/negation/neg-3.tptp
-  [neg-4]: https://github.com/jonaprieto/ndpack/blob/master/problems/negation/neg-4.tptp
-  [neg-5]: https://github.com/jonaprieto/ndpack/blob/master/problems/negation/neg-5.tptp
-  [neg-6]: https://github.com/jonaprieto/ndpack/blob/master/problems/negation/neg-6.tptp
-  [neg-7]: https://github.com/jonaprieto/ndpack/blob/master/problems/negation/neg-7.tptp
-  [neg-8]: https://github.com/jonaprieto/ndpack/blob/master/problems/negation/neg-8.tptp
-  [neg-9]: https://github.com/jonaprieto/ndpack/blob/master/problems/negation/neg-9.tptp
-  [neg-10]: https://github.com/jonaprieto/ndpack/blob/master/problems/negation/neg-10.tptp
-  [neg-11]: https://github.com/jonaprieto/ndpack/blob/master/problems/negation/neg-11.tptp
-  [neg-12]: https://github.com/jonaprieto/ndpack/blob/master/problems/negation/neg-12.tptp
-  [neg-13]: https://github.com/jonaprieto/ndpack/blob/master/problems/negation/neg-13.tptp
-  [neg-13]: https://github.com/jonaprieto/ndpack/blob/master/problems/negation/neg-13.tptp
-  [neg-13]: https://github.com/jonaprieto/ndpack/blob/master/problems/negation/neg-13.tptp
-  [neg-13]: https://github.com/jonaprieto/ndpack/blob/master/problems/negation/neg-13.tptp
-  [neg-13]: https://github.com/jonaprieto/ndpack/blob/master/problems/negation/neg-13.tptp
-  [neg-13]: https://github.com/jonaprieto/ndpack/blob/master/problems/negation/neg-13.tptp
+[neg-1]: https://github.com/jonaprieto/ndpack/blob/master/problems/negation/neg-1.tptp
+[neg-2]: https://github.com/jonaprieto/ndpack/blob/master/problems/negation/neg-2.tptp
+[neg-3]: https://github.com/jonaprieto/ndpack/blob/master/problems/negation/neg-3.tptp
+[neg-4]: https://github.com/jonaprieto/ndpack/blob/master/problems/negation/neg-4.tptp
+[neg-5]: https://github.com/jonaprieto/ndpack/blob/master/problems/negation/neg-5.tptp
+[neg-6]: https://github.com/jonaprieto/ndpack/blob/master/problems/negation/neg-6.tptp
+[neg-7]: https://github.com/jonaprieto/ndpack/blob/master/problems/negation/neg-7.tptp
+[neg-8]: https://github.com/jonaprieto/ndpack/blob/master/problems/negation/neg-8.tptp
+[neg-9]: https://github.com/jonaprieto/ndpack/blob/master/problems/negation/neg-9.tptp
+[neg-10]: https://github.com/jonaprieto/ndpack/blob/master/problems/negation/neg-10.tptp
+[neg-11]: https://github.com/jonaprieto/ndpack/blob/master/problems/negation/neg-11.tptp
+[neg-12]: https://github.com/jonaprieto/ndpack/blob/master/problems/negation/neg-12.tptp
+[neg-13]: https://github.com/jonaprieto/ndpack/blob/master/problems/negation/neg-13.tptp
+[neg-1]: https://github.com/jonaprieto/ndpack/blob/master/problems/negation/neg-1.tptp
+[neg-2]: https://github.com/jonaprieto/ndpack/blob/master/problems/negation/neg-2.tptp
+[neg-3]: https://github.com/jonaprieto/ndpack/blob/master/problems/negation/neg-3.tptp
+[neg-4]: https://github.com/jonaprieto/ndpack/blob/master/problems/negation/neg-4.tptp
+[neg-5]: https://github.com/jonaprieto/ndpack/blob/master/problems/negation/neg-5.tptp
+[neg-6]: https://github.com/jonaprieto/ndpack/blob/master/problems/negation/neg-6.tptp
+[neg-7]: https://github.com/jonaprieto/ndpack/blob/master/problems/negation/neg-7.tptp
+[neg-8]: https://github.com/jonaprieto/ndpack/blob/master/problems/negation/neg-8.tptp
+[neg-9]: https://github.com/jonaprieto/ndpack/blob/master/problems/negation/neg-9.tptp
+[neg-10]: https://github.com/jonaprieto/ndpack/blob/master/problems/negation/neg-10.tptp
+[neg-11]: https://github.com/jonaprieto/ndpack/blob/master/problems/negation/neg-11.tptp
+[neg-12]: https://github.com/jonaprieto/ndpack/blob/master/problems/negation/neg-12.tptp
+[neg-13]: https://github.com/jonaprieto/ndpack/blob/master/problems/negation/neg-13.tptp
+[neg-13]: https://github.com/jonaprieto/ndpack/blob/master/problems/negation/neg-13.tptp
+[neg-13]: https://github.com/jonaprieto/ndpack/blob/master/problems/negation/neg-13.tptp
+[neg-13]: https://github.com/jonaprieto/ndpack/blob/master/problems/negation/neg-13.tptp
+[neg-13]: https://github.com/jonaprieto/ndpack/blob/master/problems/negation/neg-13.tptp
+[neg-13]: https://github.com/jonaprieto/ndpack/blob/master/problems/negation/neg-13.tptp
