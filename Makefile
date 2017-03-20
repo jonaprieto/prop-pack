@@ -1,13 +1,42 @@
-TEX=pdflatex
-SRC=prop-pack
 
-pdf:
-	$(TEX) $(SRC).tex
-	evince $(SRC).pdf &
+PROVER = metis
+PFLAGS = --show proof
+
+TPTP_CONJ := $(wildcard problems/conjunction/*.tptp)
+TSTP_CONJ := $(addprefix problems/conjunction/,$(notdir $(TPTP_CONJ:.tptp=.tstp)))
+
+TPTP_DISJ := $(wildcard problems/disjunction/*.tptp)
+TSTP_DISJ := $(addprefix problems/disjunction/,$(notdir $(TPTP_DISJ:.tptp=.tstp)))
+
+TPTP_IMPL := $(wildcard problems/implication/*.tptp)
+TSTP_IMPL := $(addprefix problems/implication/,$(notdir $(TPTP_IMPL:.tptp=.tstp)))
+
+TPTP_BICOND := $(wildcard problems/biconditional/*.tptp)
+TSTP_BICOND := $(addprefix problems/biconditional/,$(notdir $(TPTP_BICOND:.tptp=.tstp)))
+
+TPTP_NEG := $(wildcard problems/negation/*.tptp)
+TSTP_NEG := $(addprefix problems/negation/,$(notdir $(TPTP_NEG:.tptp=.tstp)))
+
+
+.PHONY: solutions
+solutions: $(TSTP_CONJ)	$(TSTP_DISJ) $(TSTP_IMPL)	$(TSTP_BICOND) $(TSTP_NEG)
+	@find . -type f -name "cnf*" -delete
+
+problems/conjunction/%.tstp: problems/conjunction/%.tptp
+	@$(PROVER) $(PFLAGS) $< > $@
+
+problems/disjunction/%.tstp: problems/disjunction/%.tptp
+	@$(PROVER) $(PFLAGS) $< > $@
+
+problems/implication/%.tstp: problems/implication/%.tptp
+	@$(PROVER) $(PFLAGS) $< > $@
+
+problems/biconditional/%.tstp: problems/biconditional/%.tptp
+	@$(PROVER) $(PFLAGS) $< > $@
+
+problems/negation/%.tstp: problems/negation/%.tptp
+	@$(PROVER) $(PFLAGS) $< > $@
+
 
 clean:
-	rm -f *.aux
-	rm -f *.log
-	rm -f *.out
-	rm -f *.pdf
-	rm -f *.soc
+	find . -type f -name "*.tstp" -delete

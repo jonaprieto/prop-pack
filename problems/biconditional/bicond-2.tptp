@@ -1,4 +1,4 @@
 % -----------------------------------------------------------------------------
-fof(a1, axiom , P).
-fof(a2, axiom , (P <=> Q) <=> R).
-fof(goal, conjecture, Q <=> R).
+fof(a1, axiom , p).
+fof(a2, axiom , (p <=> q) <=> r).
+fof(goal, conjecture, q <=> r).

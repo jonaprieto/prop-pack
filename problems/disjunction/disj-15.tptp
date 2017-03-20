@@ -1,3 +1,3 @@
 % ------------------------------------------------------------------------------
-fof(a1, axiom, (Q => R) & (Q | P)).
-fof(goal, conjecture, (P => Q) => (R & R)).
+fof(a1, axiom, (q => r) & (q | p)).
+fof(goal, conjecture, (p => q) => (r & r)).
