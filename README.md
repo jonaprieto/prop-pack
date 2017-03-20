@@ -17,6 +17,18 @@ The problems have been taken from:
 
 ### Problems
 
+#### Basics
+
+  1. [⊢ ⊤][basic-1]
+  2. [⊢ ¬ ⊥][basic-2]
+  3. [⊢ p ∨ ¬ p][basic-3]
+  4. [p ⊢ p][basic-4]
+
+[basic-1]: https://github.com/jonaprieto/ndpack/blob/master/problems/basic/basic-1.tptp
+[basic-2]: https://github.com/jonaprieto/ndpack/blob/master/problems/basic/basic-2.tptp
+[basic-3]: https://github.com/jonaprieto/ndpack/blob/master/problems/basic/basic-3.tptp
+[basic-4]: https://github.com/jonaprieto/ndpack/blob/master/problems/basic/basic-4.tptp
+
 #### Conjunction
 
   1. [P , Q ⊢ P ⋀ Q][conj-1]

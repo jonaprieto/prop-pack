@@ -2,6 +2,9 @@
 PROVER = metis
 PFLAGS = --show proof
 
+TPTP_BASIC := $(wildcard problems/basic/*.tptp)
+TSTP_BASIC := $(addprefix problems/basic/,$(notdir $(TPTP_BASIC:.tptp=.tstp)))
+
 TPTP_CONJ := $(wildcard problems/conjunction/*.tptp)
 TSTP_CONJ := $(addprefix problems/conjunction/,$(notdir $(TPTP_CONJ:.tptp=.tstp)))
 
@@ -21,6 +24,9 @@ TSTP_NEG := $(addprefix problems/negation/,$(notdir $(TPTP_NEG:.tptp=.tstp)))
 .PHONY: solutions
 solutions: $(TSTP_CONJ)	$(TSTP_DISJ) $(TSTP_IMPL)	$(TSTP_BICOND) $(TSTP_NEG)
 	@find . -type f -name "cnf*" -delete
+
+problems/basic/%.tstp: problems/basic/%.tptp
+	@$(PROVER) $(PFLAGS) $< > $@
 
 problems/conjunction/%.tstp: problems/conjunction/%.tptp
 	@$(PROVER) $(PFLAGS) $< > $@
