@@ -31,12 +31,12 @@ The problems have been taken from:
 
 #### Conjunction
 
-  1. [P , Q ⊢ P ⋀ Q][conj-1]
-  2. [(P1 ⋀ P2) ⋀ P3  ⊢ P2][conj-2]
-  3. [P ⋀ Q  ⊢ Q ⋀ P][conj-3]
-  4. [Q ⋀ P , R ⊢ P ⋀ (R ⋀ Q)][conj-4]
-  5. [P1 ⋀ P2 , (Q1 ⋀ Q2) ⋀ R ⊢ (P1 ⋀ Q2) ⋀ R][conj-5]
-  6. [P ⋀ (Q ⋀ R) ⊢ (R ⋀ P) ⋀ Q][conj-6]
+  1. [p , q ⊢ p ⋀ q][conj-1]
+  2. [(p1 ⋀ p2) ⋀ p3  ⊢ p2][conj-2]
+  3. [p ⋀ q  ⊢ q ⋀ p][conj-3]
+  4. [q ⋀ p , r ⊢ p ⋀ (r ⋀ q)][conj-4]
+  5. [p1 ⋀ p2 , (q1 ⋀ q2) ⋀ r ⊢ (p1 ⋀ q2) ⋀ r][conj-5]
+  6. [p ⋀ (q ⋀ r) ⊢ (r ⋀ p) ⋀ q][conj-6]
 
 [conj-1]: https://github.com/jonaprieto/ndpack/blob/master/problems/conjunction/conj-1.tptp
 [conj-2]: https://github.com/jonaprieto/ndpack/blob/master/problems/conjunction/conj-2.tptp
@@ -48,27 +48,27 @@ The problems have been taken from:
 
 #### Implication
 
-  1. [ ⊢ P ⇒ P][impl-1]
-  2. [ ⊢ P ⇒ (Q ⇒ P)][impl-2]
-  3. [ P ⇒ Q , Q ⇒ R ⊢ P ⇒ R][impl-3]
-  4. [ ⊢ P ⇒ ((P ⇒ Q) ⇒ Q)][impl-4]
-  5. [ (P ⇒ Q) ⇒ (P ⇒ R) ⊢ Q ⇒ (P ⇒ R)][impl-5]
-  6. [ (P ⇒ Q) ⇒ P  ⊢ Q ⇒ P][impl-6]
-  7. [ P ⇒ (Q ⇒ R) ⊢ Q ⇒ (P ⇒ R)][impl-7]
-  8. [ P ⇒ (Q ⇒ R) , P ⇒ Q ⊢ P ⇒ R][impl-8]
-  9. [ (P ⇒ P) ⇒ Q ⊢ (Q ⇒ R) ⇒ R][impl-9]
-  10. [ ⊢ (P ⇒ (Q ⇒ R)) ⇒ ((P ⇒ Q) ⇒ (P ⇒ R))][impl-10]
+  1. [ ⊢ p ⇒ p][impl-1]
+  2. [ ⊢ p ⇒ (q ⇒ p)][impl-2]
+  3. [ p ⇒ q , q ⇒ r ⊢ p ⇒ r][impl-3]
+  4. [ ⊢ p ⇒ ((p ⇒ q) ⇒ q)][impl-4]
+  5. [ (p ⇒ q) ⇒ (p ⇒ r) ⊢ q ⇒ (p ⇒ r)][impl-5]
+  6. [ (p ⇒ q) ⇒ p  ⊢ q ⇒ p][impl-6]
+  7. [ p ⇒ (q ⇒ r) ⊢ q ⇒ (p ⇒ r)][impl-7]
+  8. [ p ⇒ (q ⇒ r) , p ⇒ q ⊢ p ⇒ r][impl-8]
+  9. [ (p ⇒ p) ⇒ q ⊢ (q ⇒ r) ⇒ r][impl-9]
+  10. [ ⊢ (p ⇒ (q ⇒ r)) ⇒ ((p ⇒ q) ⇒ (p ⇒ r))][impl-10]
 
   *Mixed problems with conjunction*
 
-  11. [ P ⋀ Q  ⊢ P ⇒ Q][impl-11]
-  12. [ ⊢ P ⋀ Q ⇒ P][impl-12]
-  13. [ P ⇒ (Q ⋀ R) ⊢ P ⇒ Q][impl-13]
-  14. [ ((P ⋀ Q) ⇒ P) ⇒ (Q ⇒ P) ⊢ Q ⇒ P][impl-14]
-  15. [ (P ⋀ Q) ⇒ R  ⊢ P ⇒ (Q ⇒ R)][impl-15]
-  16. [ (P ⇒ Q) ⋀ (P ⇒ R) ⊢ P ⇒ (Q ⋀ R)][impl-16]
-  17. [ P ⇒ (Q ⋀ R) ⊢ (P ⇒ Q) ⋀ (P ⇒ R)][impl-17]
-  18. [ (((P1 ⋀ P2) ⋀ P3) ⋀ P4) ⋀ P5 ⊢ P1 ⋀ P1][impl-18]
+  11. [ p ⋀ q  ⊢ p ⇒ q][impl-11]
+  12. [ ⊢ p ⋀ q ⇒ p][impl-12]
+  13. [ p ⇒ (q ⋀ r) ⊢ p ⇒ q][impl-13]
+  14. [ ((p ⋀ q) ⇒ p) ⇒ (q ⇒ p) ⊢ q ⇒ p][impl-14]
+  15. [ (p ⋀ q) ⇒ r  ⊢ p ⇒ (q ⇒ r)][impl-15]
+  16. [ (p ⇒ q) ⋀ (p ⇒ r) ⊢ p ⇒ (q ⋀ r)][impl-16]
+  17. [ p ⇒ (q ⋀ r) ⊢ (p ⇒ q) ⋀ (p ⇒ r)][impl-17]
+  18. [ (((p1 ⋀ p2) ⋀ p3) ⋀ p4) ⋀ p5 ⊢ p1 ⋀ p1][impl-18]
 
 [impl-1]: https://github.com/jonaprieto/ndpack/blob/master/problems/implication/impl-1.tptp
 [impl-2]: https://github.com/jonaprieto/ndpack/blob/master/problems/implication/impl-2.tptp
@@ -91,30 +91,30 @@ The problems have been taken from:
 
 #### Disjunction
 
-  1. [P ∨ Q  ⊢ Q ∨ P][disj-1]
-  2. [P ∨ Q ⊢ P ∨ (Q ∨ R)][disj-2]
-  3. [P ∨ (Q ∨ R) ⊢ P ∨ (Q ∨ R)][disj-3]
-  4. [(P ∨ Q) ∨ (R ∨ P1) ⊢ (P ∨ P1) ∨ (R ∨ Q)][disj-4]
+  1. [p ∨ q  ⊢ q ∨ p][disj-1]
+  2. [p ∨ q ⊢ p ∨ (q ∨ r)][disj-2]
+  3. [p ∨ (q ∨ r) ⊢ p ∨ (q ∨ r)][disj-3]
+  4. [(p ∨ q) ∨ (r ∨ p1) ⊢ (p ∨ p1) ∨ (r ∨ q)][disj-4]
 
   *Mixed problems with conjunction*
 
-  5. [P ⋀ (Q ∨ R) ⊢ (P ⋀ Q) ∨ (P ⋀ R)][disj-5]
-  6. [(P ∨ Q) ⋀ (P ∨ R) ⊢ P ∨ (Q ⋀ R)][disj-6]
-  7. [(P ⋀ Q) ∨ (P ⋀ R) ⊢ P ⋀ (Q ∨ R)][disj-7]
-  8. [P ∨ (Q ⋀ R) ⊢ (P ∨ Q) ⋀ (P ∨ R)][disj-8]
+  5. [p ⋀ (q ∨ r) ⊢ (p ⋀ q) ∨ (p ⋀ r)][disj-5]
+  6. [(p ∨ q) ⋀ (p ∨ r) ⊢ p ∨ (q ⋀ r)][disj-6]
+  7. [(p ⋀ q) ∨ (p ⋀ r) ⊢ p ⋀ (q ∨ r)][disj-7]
+  8. [p ∨ (q ⋀ r) ⊢ (p ∨ q) ⋀ (p ∨ r)][disj-8]
 
   *Mixed problems with implication*
 
-  9. [(P ⇒ Q) ∨ Q ⊢ P ⇒ Q][disj-9]
-  10. [P ∨ Q  ⊢ (P ⇒ Q) ⇒ Q][disj-10]
-  11. [(P ⇒ Q) ⇒ (P ⇒ R) ⊢ (P ∨ R) ⇒ (Q ⇒ R)][disj-11]
-  12. [(P ⇒ Q) ∨ (P ⇒ R) ⊢ P ⇒ (Q ∨ R)][disj-12]
+  9. [(p ⇒ q) ∨ q ⊢ p ⇒ q][disj-9]
+  10. [p ∨ q  ⊢ (p ⇒ q) ⇒ q][disj-10]
+  11. [(p ⇒ q) ⇒ (p ⇒ r) ⊢ (p ∨ r) ⇒ (q ⇒ r)][disj-11]
+  12. [(p ⇒ q) ∨ (p ⇒ r) ⊢ p ⇒ (q ∨ r)][disj-12]
 
   *Mixed problems with conjunction and implication*
 
-  13. [(P ⇒ Q) ⋀ (Q ⇒ P) ⊢ (P ∨ Q) ⇒ (P ⋀ Q)][disj-13]
-  14. [(P ∨ Q) ⇒ (P ⋀ Q) ⊢ (P ⇒ Q) ⋀ (Q ⇒ P)][disj-14]
-  15. [(Q ⇒ R) ⋀ (Q ∨ P) ⊢ (P ⇒ Q) ⇒ (R ⋀ R)][disj-15]
+  13. [(p ⇒ q) ⋀ (q ⇒ p) ⊢ (p ∨ q) ⇒ (p ⋀ q)][disj-13]
+  14. [(p ∨ q) ⇒ (p ⋀ q) ⊢ (p ⇒ q) ⋀ (q ⇒ p)][disj-14]
+  15. [(q ⇒ r) ⋀ (q ∨ p) ⊢ (p ⇒ q) ⇒ (r ⋀ r)][disj-15]
 
 [disj-1]: https://github.com/jonaprieto/ndpack/blob/master/problems/disjunction/disj-1.tptp
 [disj-2]: https://github.com/jonaprieto/ndpack/blob/master/problems/disjunction/disj-2.tptp
@@ -135,22 +135,22 @@ The problems have been taken from:
 
 #### Biconditional
 
-  1. [P ⇔ Q ⊢ Q  ⇔ P][bicond-1]
-  2. [P , (P  ⇔ Q) ⇔ R ⊢ Q ⇔ R][bicond-2]
-  3. [⊢ (P  ⇔ Q) ⇔ (Q ⇔ P)][bicond-3]
+  1. [p ⇔ q ⊢ q  ⇔ p][bicond-1]
+  2. [p , (p  ⇔ q) ⇔ r ⊢ q ⇔ r][bicond-2]
+  3. [⊢ (p  ⇔ q) ⇔ (q ⇔ p)][bicond-3]
 
   *Mixed problems*
 
-  4. [(P ∨ Q)  ⇔ Q ⊢ P ⇒ Q][bicond-4]
-  5. [(P ⋀ Q)  ⇔ P ⊢ P ⇒ Q][bicond-5]
-  6. [P ⇒ Q ⊢ (P ∨ Q)  ⇔ Q][bicond-6]
-  7. [P ⇒ Q ⊢ (P ⋀ Q)  ⇔ P][bicond-7]
-  8. [(P ⇒ Q) ⋀ (Q ⇒ P) ⊢ P  ⇔ Q][bicond-8]
-  9. [⊢ (P ⋀ Q) ⇒ ((P ⇒ Q) ⇒ P)][bicond-9]
-  10. [⊢ ((P ⇒ Q) ⇒ P) ⇒ (P  ⇔ Q)][bicond-10]
-  11. [((P ∨ Q) ⇔ Q) ⇔ P ⊢ P  ⇔ Q][bicond-11]
-  12. [P ⇒ (Q ⇔ R) ⊢ (P ⋀ Q) ⇔ (P ⋀ R)][bicond-12]
-  13. [⊢ (P ⋀ (Q ∨ R)) ⇔ ((P ∨ Q) ⋀ (P ∨ R))][bicond-13]
+  4. [(p ∨ q)  ⇔ q ⊢ p ⇒ q][bicond-4]
+  5. [(p ⋀ q)  ⇔ p ⊢ p ⇒ q][bicond-5]
+  6. [p ⇒ q ⊢ (p ∨ q)  ⇔ q][bicond-6]
+  7. [p ⇒ q ⊢ (p ⋀ q)  ⇔ p][bicond-7]
+  8. [(p ⇒ q) ⋀ (q ⇒ p) ⊢ p  ⇔ q][bicond-8]
+  9. [⊢ (p ⋀ q) ⇒ ((p ⇒ q) ⇒ p)][bicond-9]
+  10. [⊢ ((p ⇒ q) ⇒ p) ⇒ (p  ⇔ q)][bicond-10]
+  11. [((p ∨ q) ⇔ q) ⇔ p ⊢ p  ⇔ q][bicond-11]
+  12. [p ⇒ (q ⇔ r) ⊢ (p ⋀ q) ⇔ (p ⋀ r)][bicond-12]
+  13. [⊢ (p ⋀ (q ∨ r)) ⇔ ((p ∨ q) ⋀ (p ∨ r))][bicond-13]
 
 [bicond-1]: https://github.com/jonaprieto/ndpack/blob/master/problems/biconditional/bicond-1.tptp
 [bicond-2]: https://github.com/jonaprieto/ndpack/blob/master/problems/biconditional/bicond-2.tptp
@@ -171,47 +171,47 @@ The problems have been taken from:
 
   *Negation introduction*
 
-  1. [P  ⊢  ¬ (¬ P)][neg-1]
-  2. [¬ P  ⊢  ¬ (P ⋀ Q)][neg-2]
-  3. [P ⇒  ¬ P  ⊢  ¬ P][neg-3]
-  4. [¬ (P ⇒ Q) ⊢ ¬ Q][neg-4]
-  5. [¬ (P ⋀ Q)  ⊢ P ⇒  ¬ Q][neg-5]
-  6. [P ⇒ Q ⊢ ¬ Q ⇒ ¬ P][neg-6]
-  7. [⊢ ¬ ((P ⋀ ¬ P) ∨ (Q ⋀ ¬ Q))][neg-7]
-  8. [¬ (P ∨ Q) ⊢ ¬ P ⋀ ¬ Q][neg-8]
-  9. [¬ P ∨ ¬ Q ⊢ ¬ (P ⋀ Q)][neg-9]
+  1. [p  ⊢  ¬ (¬ p)][neg-1]
+  2. [¬ p  ⊢  ¬ (p ⋀ q)][neg-2]
+  3. [p ⇒  ¬ p  ⊢  ¬ p][neg-3]
+  4. [¬ (p ⇒ q) ⊢ ¬ q][neg-4]
+  5. [¬ (p ⋀ q)  ⊢ p ⇒  ¬ q][neg-5]
+  6. [p ⇒ q ⊢ ¬ q ⇒ ¬ p][neg-6]
+  7. [⊢ ¬ ((p ⋀ ¬ p) ∨ (q ⋀ ¬ q))][neg-7]
+  8. [¬ (p ∨ q) ⊢ ¬ p ⋀ ¬ q][neg-8]
+  9. [¬ p ∨ ¬ q ⊢ ¬ (p ⋀ q)][neg-9]
 
   *Ex falso quodlibet*
 
-  10. [¬ P  ⊢ P ⇒ Q][neg-10]
-  11. [P ⋀  ¬ P  ⊢ Q][neg-11]
-  12. [P ∨ Q  ⊢  ¬ P ⇒ Q][neg-12]
-  13. [P ⇒ Q , P ⋀  ¬ Q  ⊢ R][neg-13]
-  14. [P ∨ Q , P ⇔ R , ¬ (P ⋀ Q)  ⊢ R][neg-14]
+  10. [¬ p  ⊢ p ⇒ q][neg-10]
+  11. [p ⋀  ¬ p  ⊢ q][neg-11]
+  12. [p ∨ q  ⊢  ¬ p ⇒ q][neg-12]
+  13. [p ⇒ q , p ⋀  ¬ q  ⊢ r][neg-13]
+  14. [p ∨ q , p ⇔ r , ¬ (p ⋀ q)  ⊢ r][neg-14]
 
   *Indirect proofs*
 
-  15. [¬ (¬ P)  ⊢ P][neg-15]
-  16. [ ⊢ P ∨  ¬ P][neg-16]
-  17. [¬ P ⇒ Q  ⊢ P ∨ Q][neg-17]
-  18. [¬ (¬ P ∨ ¬ Q) ⊢ P ⋀ Q][neg-18]
-  19. [¬ (P ⋀ Q) ⊢ ¬ P ∨ ¬ Q][neg-19]
+  15. [¬ (¬ p)  ⊢ p][neg-15]
+  16. [ ⊢ p ∨  ¬ p][neg-16]
+  17. [¬ p ⇒ q  ⊢ p ∨ q][neg-17]
+  18. [¬ (¬ p ∨ ¬ q) ⊢ p ⋀ q][neg-18]
+  19. [¬ (p ⋀ q) ⊢ ¬ p ∨ ¬ q][neg-19]
 
   *Mixed problems*
 
-  20. [¬ (P ⇒ Q) ⊢ P][neg-20]
-  21. [(P ⇒ Q) ⇒ P ⊢ P][neg-21]
-  22. [P ⇔ ¬ (¬ Q) ⊢ P ⇔ Q][neg-22]
-  23. [(P ⇒ Q) ⇒ Q ⊢ ¬ Q ⇒ P][neg-23]
-  24. [¬ P ⋀ ¬ Q ⊢ ¬ (P ∨ Q)][neg-24]
-  25. [⊢ P ∨ (P ⇒ Q)][neg-25]
-  26. [⊢ (P ⇒ Q) ∨ (Q ⇒ R)][neg-26]
-  27. [¬ P ⇒ Q , R ∨ ¬ Q , P ⇒ (Q1 ∨ Q2) , ¬ R ⋀ ¬ Q2 ⊢ Q1][neg-27]
-  28. [P ⇒ (Q ∨ R) ⊢ (P ⇒ Q) ∨ (P  ⇒ R)][neg-28]
-  29. [⊢ ¬ (P ⋀ Q) ⇔ (¬ P  ∨ ¬ Q)][neg-29]
-  30. [¬ (¬ (¬ P))  ⊢  (¬ P)][neg-30]
-  31. [P  ⊢  ¬ (¬ P)][neg-31]
-  32. [¬ (¬ P) ∧ ¬ (¬ Q) ⊢ P ∧ Q][neg-32]
+  20. [¬ (p ⇒ q) ⊢ p][neg-20]
+  21. [(p ⇒ q) ⇒ p ⊢ p][neg-21]
+  22. [p ⇔ ¬ (¬ q) ⊢ p ⇔ q][neg-22]
+  23. [(p ⇒ q) ⇒ q ⊢ ¬ q ⇒ p][neg-23]
+  24. [¬ p ⋀ ¬ q ⊢ ¬ (p ∨ q)][neg-24]
+  25. [⊢ p ∨ (p ⇒ q)][neg-25]
+  26. [⊢ (p ⇒ q) ∨ (q ⇒ r)][neg-26]
+  27. [¬ p ⇒ q , r ∨ ¬ q , p ⇒ (q1 ∨ q2) , ¬ r ⋀ ¬ q2 ⊢ q1][neg-27]
+  28. [p ⇒ (q ∨ r) ⊢ (p ⇒ q) ∨ (p  ⇒ r)][neg-28]
+  29. [⊢ ¬ (p ⋀ q) ⇔ (¬ p  ∨ ¬ q)][neg-29]
+  30. [¬ (¬ (¬ p))  ⊢  (¬ p)][neg-30]
+  31. [p  ⊢  ¬ (¬ p)][neg-31]
+  32. [¬ (¬ p) ∧ ¬ (¬ q) ⊢ p ∧ q][neg-32]
 
 
 [neg-1]: https://github.com/jonaprieto/ndpack/blob/master/problems/negation/neg-1.tptp
