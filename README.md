@@ -1,4 +1,4 @@
-# Prop-Pack
+# Prop-Pack [![DOI](https://zenodo.org/badge/85266317.svg)](https://zenodo.org/badge/latestdoi/85266317)
 
 This repository intents to be a collection of problems for propositional logic in
 [TPTP](http://www.cs.miami.edu/~tptp/TPTP/SyntaxBNF.html) format.
