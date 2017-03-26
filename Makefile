@@ -22,7 +22,12 @@ TSTP_NEG := $(addprefix problems/negation/,$(notdir $(TPTP_NEG:.tptp=.tstp)))
 
 
 .PHONY: solutions
-solutions: $(TSTP_CONJ)	$(TSTP_DISJ) $(TSTP_IMPL)	$(TSTP_BICOND) $(TSTP_NEG)
+solutions: $(TSTP_BASIC) \
+					 $(TSTP_CONJ)	\
+					 $(TSTP_DISJ) \
+					 $(TSTP_IMPL)	\
+					 $(TSTP_BICOND) \
+					 $(TSTP_NEG)
 	@find . -type f -name "cnf*" -delete
 
 problems/basic/%.tstp: problems/basic/%.tptp
