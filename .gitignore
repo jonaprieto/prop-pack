@@ -1,13 +1,14 @@
+*.aux
 *.DS_Store
+*.dvi
 *.fdb_latexmk
 *.fls
 *.log
+*.lol
 *.out
 *.pdf
-*.dvi
 *.soc
 *.synctex.gz
-*.lol
+*.synctex.gz(busy)
 *.toc
-*.aux
 *.tstp

@@ -1,0 +1,205 @@
+\documentclass[12pt]{article}
+
+\usepackage[scaled=0.9]{beramono}
+\usepackage{xcolor}
+
+\usepackage[T1]{fontenc}
+\usepackage{mathpazo}
+\linespread{1.05}
+\usepackage[T1,small,euler-digits]{eulervm}
+
+\usepackage[utf8x]{inputenc}
+ \usepackage{hyperref}
+\hypersetup{linktocpage}
+\hypersetup{
+    colorlinks,
+    citecolor=amethyst,
+    filecolor=black,
+    linkcolor=blue(munsell),
+    urlcolor=blue(munsell)
+}
+\usepackage[T1]{fontenc}
+\usepackage[]{amsmath,amssymb}
+
+\definecolor{amethyst}{rgb}{0.6, 0.4, 0.8}
+\definecolor{antiquefuchsia}{rgb}{0.57, 0.36, 0.51}
+\definecolor{ballblue}{rgb}{0.13, 0.67, 0.8}
+\definecolor{blue(munsell)}{rgb}{0.0, 0.5, 0.69}
+\definecolor{blue(pigment)}{rgb}{0.2, 0.2, 0.6}
+\definecolor{brightmaroon}{rgb}{0.76, 0.13, 0.28}
+\definecolor{bondiblue}{rgb}{0.0, 0.58, 0.71}
+\definecolor{cadet}{rgb}{0.33, 0.41, 0.47}
+\definecolor{ashgrey}{rgb}{0.7, 0.75, 0.71}
+\definecolor{amber}{rgb}{1.0, 0.75, 0.0}
+\definecolor{aliceblue}{rgb}{0.94, 0.97, 1.0}
+\usepackage{listings,chngcntr}
+
+\lstset{
+    aboveskip=10pt
+  , backgroundcolor=\color{aliceblue}
+  , basicstyle=\ttfamily
+  , belowskip=10pt
+  , frame=trbl
+  , keywords=[2]{axiom, conjecture,inference, negated_conjecture, plain}
+  , keywords=[3]{fof, cnf}
+  , keywords=[4]{canonicalize, resolve, conjunct,
+    strip, simplify, negate, clausify}
+  , keywordstyle=[2]\color{cadet}%\underbar,%\bfseries
+  , keywordstyle=[3]\color{bondiblue}\bfseries
+  , keywordstyle=[4]\bfseries
+  , showstringspaces=false
+}
+
+\usepackage[]{graphicx}
+
+\usepackage{array}
+\usepackage[margin=1in]{geometry}
+
+\usepackage{url}
+\usepackage{float}
+\usepackage{syntax}
+% \setlength{\grammarparsep}{20pt plus 1pt minus 1pt} % increase separation between rules
+\setlength{\grammarindent}{4em} % increase separation between LHS/RHS
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+\newcommand{\textdf}[1]{\textbf{\textsf{#1}}\index{#1}}
+\newcommand{\tptp}[0]{\texorpdfstring{\texttt{TPTP}}\ \ }
+\newcommand{\miss}[0]{{\colorbox{amber}{\textdf{?}}}}
+\newcommand{\ttext}[1]{\texttt{\color{black} #1}}
+\newcommand{\shell}[1]{\texttt{\color{black} #1}}
+
+\newcommand{\problemtptp}[3][c]{\lstinputlisting[caption=#2, firstline=#3, label=custom#1]{#2}}
+\newcommand{\solutiontstp}[2][c]{\lstinputlisting[caption=#2, firstline=5, label=custom#1]{#2}}
+
+\setlength{\topmargin}{-.35 in}
+\setlength{\oddsidemargin}{0in}
+\setlength{\evensidemargin}{0in}
+\setlength{\textheight}{9.in}
+\setlength{\textwidth}{6.7in}
+
+\begin{document}
+\counterwithin{lstlisting}{section}
+
+\hrulefill\ \ Version: \today\\
+
+\vspace{3mm}
+\begin{center}
+{\Large Prop-Pack Solutions\footnote{
+\href{https://github.com/jonaprieto/prop-pack}{{\color{blue(munsell)}
+\texttt{https://github.com/jonaprieto/prop-pack}}}}
+}\\
+\textbf{Jonathan Prieto-Cubides}\\ %You should put your name here
+\href{mailto:jprieto9@eafit.edu.co}{{\color{blue(munsell)}\texttt{jprieto9@eafit.edu.co}}}
+\end{center}
+\vspace{0.1 cm}
+
+\tableofcontents
+
+\section{TSTP Proofs}
+Metis ATP (2.3 - release 20170315) found these solutions.
+\subsection{Basic}
+\problemtptp[basic-1.tptp]{problems/basic/basic-1.tstp}{2}
+\problemtptp[basic-2.tptp]{problems/basic/basic-2.tstp}{2}
+\problemtptp[basic-3.tptp]{problems/basic/basic-3.tstp}{2}
+\problemtptp[basic-4.tptp]{problems/basic/basic-4.tstp}{2}
+
+\subsection{Conjunction}
+\problemtptp[conj-1.tptp]{problems/conjunction/conj-1.tstp}{2}
+\problemtptp[conj-2.tptp]{problems/conjunction/conj-2.tstp}{2}
+\problemtptp[conj-3.tptp]{problems/conjunction/conj-3.tstp}{2}
+\problemtptp[conj-4.tptp]{problems/conjunction/conj-4.tstp}{2}
+\problemtptp[conj-5.tptp]{problems/conjunction/conj-5.tstp}{2}
+\problemtptp[conj-6.tptp]{problems/conjunction/conj-6.tstp}{2}
+
+\subsection{Implication}
+\problemtptp[impl-1.tptp]{problems/implication/impl-1.tstp}{2}
+\problemtptp[impl-2.tptp]{problems/implication/impl-2.tstp}{2}
+\problemtptp[impl-3.tptp]{problems/implication/impl-3.tstp}{2}
+\problemtptp[impl-4.tptp]{problems/implication/impl-4.tstp}{2}
+\problemtptp[impl-5.tptp]{problems/implication/impl-5.tstp}{2}
+\problemtptp[impl-6.tptp]{problems/implication/impl-6.tstp}{2}
+\problemtptp[impl-7.tptp]{problems/implication/impl-7.tstp}{2}
+\problemtptp[impl-8.tptp]{problems/implication/impl-8.tstp}{2}
+\problemtptp[impl-9.tptp]{problems/implication/impl-9.tstp}{2}
+\problemtptp[impl-10.tptp]{problems/implication/impl-10.tstp}{2}
+\problemtptp[impl-11.tptp]{problems/implication/impl-11.tstp}{2}
+\problemtptp[impl-12.tptp]{problems/implication/impl-12.tstp}{2}
+\problemtptp[impl-13.tptp]{problems/implication/impl-13.tstp}{2}
+\problemtptp[impl-14.tptp]{problems/implication/impl-14.tstp}{2}
+\problemtptp[impl-15.tptp]{problems/implication/impl-15.tstp}{2}
+\problemtptp[impl-16.tptp]{problems/implication/impl-16.tstp}{2}
+\problemtptp[impl-17.tptp]{problems/implication/impl-17.tstp}{2}
+\problemtptp[impl-18.tptp]{problems/implication/impl-18.tstp}{2}
+
+\subsection{Disjunction}
+%
+\problemtptp[disj-1.tptp]{problems/disjunction/disj-1.tstp}{2}
+\problemtptp[disj-2.tptp]{problems/disjunction/disj-2.tstp}{2}
+\problemtptp[disj-3.tptp]{problems/disjunction/disj-3.tstp}{2}
+\problemtptp[disj-4.tptp]{problems/disjunction/disj-4.tstp}{2}
+\problemtptp[disj-5.tptp]{problems/disjunction/disj-5.tstp}{2}
+\problemtptp[disj-6.tptp]{problems/disjunction/disj-6.tstp}{2}
+\problemtptp[disj-7.tptp]{problems/disjunction/disj-7.tstp}{2}
+\problemtptp[disj-8.tptp]{problems/disjunction/disj-8.tstp}{2}
+\problemtptp[disj-9.tptp]{problems/disjunction/disj-9.tstp}{2}
+\problemtptp[disj-10.tptp]{problems/disjunction/disj-10.tstp}{2}
+\problemtptp[disj-11.tptp]{problems/disjunction/disj-11.tstp}{2}
+\problemtptp[disj-12.tptp]{problems/disjunction/disj-12.tstp}{2}
+\problemtptp[disj-13.tptp]{problems/disjunction/disj-13.tstp}{2}
+\problemtptp[disj-14.tptp]{problems/disjunction/disj-14.tstp}{2}
+\problemtptp[disj-15.tptp]{problems/disjunction/disj-15.tstp}{2}
+%
+\subsection{Biimplication}
+
+\problemtptp[bicond-1.tptp]{problems/biconditional/bicond-1.tstp}{2}
+\problemtptp[bicond-2.tptp]{problems/biconditional/bicond-2.tstp}{2}
+\problemtptp[bicond-3.tptp]{problems/biconditional/bicond-3.tstp}{2}
+\problemtptp[bicond-4.tptp]{problems/biconditional/bicond-4.tstp}{2}
+\problemtptp[bicond-5.tptp]{problems/biconditional/bicond-5.tstp}{2}
+\problemtptp[bicond-6.tptp]{problems/biconditional/bicond-6.tstp}{2}
+\problemtptp[bicond-7.tptp]{problems/biconditional/bicond-7.tstp}{2}
+\problemtptp[bicond-8.tptp]{problems/biconditional/bicond-8.tstp}{2}
+\problemtptp[bicond-9.tptp]{problems/biconditional/bicond-9.tstp}{2}
+\problemtptp[bicond-10.tptp]{problems/biconditional/bicond-10.tstp}{2}
+\problemtptp[bicond-11.tptp]{problems/biconditional/bicond-11.tstp}{2}
+\problemtptp[bicond-12.tptp]{problems/biconditional/bicond-12.tstp}{2}
+\problemtptp[bicond-13.tptp]{problems/biconditional/bicond-13.tstp}{2}
+
+
+\subsection{Negation}
+
+\problemtptp[neg-1.tptp]{problems/negation/neg-1.tstp}{2}
+\problemtptp[neg-2.tptp]{problems/negation/neg-2.tstp}{2}
+\problemtptp[neg-3.tptp]{problems/negation/neg-3.tstp}{2}
+\problemtptp[neg-4.tptp]{problems/negation/neg-4.tstp}{2}
+\problemtptp[neg-5.tptp]{problems/negation/neg-5.tstp}{2}
+\problemtptp[neg-6.tptp]{problems/negation/neg-6.tstp}{2}
+\problemtptp[neg-7.tptp]{problems/negation/neg-7.tstp}{2}
+\problemtptp[neg-8.tptp]{problems/negation/neg-8.tstp}{2}
+\problemtptp[neg-9.tptp]{problems/negation/neg-9.tstp}{2}
+\problemtptp[neg-10.tptp]{problems/negation/neg-10.tstp}{2}
+\problemtptp[neg-11.tptp]{problems/negation/neg-11.tstp}{2}
+\problemtptp[neg-12.tptp]{problems/negation/neg-12.tstp}{2}
+\problemtptp[neg-13.tptp]{problems/negation/neg-13.tstp}{2}
+\problemtptp[neg-14.tptp]{problems/negation/neg-14.tstp}{2}
+\problemtptp[neg-15.tptp]{problems/negation/neg-15.tstp}{2}
+\problemtptp[neg-16.tptp]{problems/negation/neg-16.tstp}{2}
+\problemtptp[neg-17.tptp]{problems/negation/neg-17.tstp}{2}
+\problemtptp[neg-18.tptp]{problems/negation/neg-18.tstp}{2}
+\problemtptp[neg-19.tptp]{problems/negation/neg-19.tstp}{2}
+\problemtptp[neg-20.tptp]{problems/negation/neg-20.tstp}{2}
+\problemtptp[neg-21.tptp]{problems/negation/neg-21.tstp}{2}
+\problemtptp[neg-22.tptp]{problems/negation/neg-22.tstp}{2}
+\problemtptp[neg-23.tptp]{problems/negation/neg-23.tstp}{2}
+\problemtptp[neg-24.tptp]{problems/negation/neg-24.tstp}{2}
+\problemtptp[neg-25.tptp]{problems/negation/neg-25.tstp}{2}
+\problemtptp[neg-26.tptp]{problems/negation/neg-26.tstp}{2}
+\problemtptp[neg-27.tptp]{problems/negation/neg-27.tstp}{2}
+\problemtptp[neg-28.tptp]{problems/negation/neg-28.tstp}{2}
+\problemtptp[neg-29.tptp]{problems/negation/neg-29.tstp}{2}
+\problemtptp[neg-30.tptp]{problems/negation/neg-30.tstp}{2}
+\problemtptp[neg-31.tptp]{problems/negation/neg-31.tstp}{2}
+\problemtptp[neg-32.tptp]{problems/negation/neg-32.tstp}{2}
+
+\end{document}
