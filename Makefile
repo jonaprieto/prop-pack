@@ -1,6 +1,5 @@
 
-PROVER = metis
-PFLAGS = --show proof
+ATP ?= metis --show proof
 
 TPTP_BASIC := $(wildcard problems/basic/*.tptp)
 TSTP_BASIC := $(addprefix problems/basic/,$(notdir $(TPTP_BASIC:.tptp=.tstp)))
@@ -20,7 +19,6 @@ TSTP_BICOND := $(addprefix problems/biconditional/,$(notdir $(TPTP_BICOND:.tptp=
 TPTP_NEG := $(wildcard problems/negation/*.tptp)
 TSTP_NEG := $(addprefix problems/negation/,$(notdir $(TPTP_NEG:.tptp=.tstp)))
 
-
 .PHONY: solutions
 solutions: $(TSTP_BASIC) \
 					 $(TSTP_CONJ)	\
@@ -29,25 +27,31 @@ solutions: $(TSTP_BASIC) \
 					 $(TSTP_BICOND) \
 					 $(TSTP_NEG)
 	@find . -type f -name "cnf*" -delete
+	@echo "ATP: $(ATP)"
 
 problems/basic/%.tstp: problems/basic/%.tptp
-	@$(PROVER) $(PFLAGS) $< > $@
+	@echo $@
+	@$(ATP) $< > $@
 
 problems/conjunction/%.tstp: problems/conjunction/%.tptp
-	@$(PROVER) $(PFLAGS) $< > $@
+	@echo $@
+	@$(ATP) $< > $@
 
 problems/disjunction/%.tstp: problems/disjunction/%.tptp
-	@$(PROVER) $(PFLAGS) $< > $@
+	@echo $@
+	@$(ATP) $< > $@
 
 problems/implication/%.tstp: problems/implication/%.tptp
-	@$(PROVER) $(PFLAGS) $< > $@
+	@echo $@
+	@$(ATP) $< > $@
 
 problems/biconditional/%.tstp: problems/biconditional/%.tptp
-	@$(PROVER) $(PFLAGS) $< > $@
+	@echo $@
+	@$(ATP) $< > $@
 
 problems/negation/%.tstp: problems/negation/%.tptp
-	@$(PROVER) $(PFLAGS) $< > $@
-
+	@echo $@
+	@$(ATP) $< > $@
 
 clean:
 	find . -type f -name "*.aux" -delete
