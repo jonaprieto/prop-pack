@@ -3,7 +3,7 @@
 This repository intents to be a collection of problems for propositional logic in
 [TPTP](http://www.cs.miami.edu/~tptp/TPTP/SyntaxBNF.html) format.
 
-* Download to preview the problems: [PDF Version][pdf]
+* Download to preview all problems: [PDF Version][pdf]
 
 [pdf]: https://github.com/jonaprieto/prop-pack/releases/download/20170317/prop-pack.pdf
 
@@ -246,3 +246,13 @@ The problems have been taken from:
 [neg-30]: https://github.com/jonaprieto/ndpack/blob/master/problems/negation/neg-30.tptp
 [neg-31]: https://github.com/jonaprieto/ndpack/blob/master/problems/negation/neg-31.tptp
 [neg-32]: https://github.com/jonaprieto/ndpack/blob/master/problems/negation/neg-32.tptp
+
+
+### Compendium in PDF Format.
+
+We provide two latex files:
+
+  - The problems in `tptp` format in `tptp.tex` file and,
+  - The solutions using [Metis][metis] ATP in `tstp` format in `tstp.tex`
+
+[metis]: http://github.com/gilith/metis
