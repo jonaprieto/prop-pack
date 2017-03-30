@@ -1,5 +1,6 @@
 
-ATP ?= metis --show proof
+ATP ?= online-atps --atp=metis
+# ATP ?= metis --show proof
 
 TPTP_BASIC := $(wildcard problems/basic/*.tptp)
 TSTP_BASIC := $(addprefix problems/basic/,$(notdir $(TPTP_BASIC:.tptp=.tstp)))
