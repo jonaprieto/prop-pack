@@ -30,6 +30,36 @@ solutions: $(TSTP_BASIC) \
 	@find . -type f -name "cnf*" -delete
 	@echo "ATP: $(ATP)"
 
+.PHONY: basic
+basic: $(TSTP_BASIC)
+	@find . -type f -name "cnf*" -delete
+	@echo "ATP: $(ATP)"
+
+.PHONY: conjunction
+conjunction: $(TSTP_CONJ)
+	@find . -type f -name "cnf*" -delete
+	@echo "ATP: $(ATP)"
+
+.PHONY: disjunction
+disjunction: $(TSTP_DISJ)
+	@find . -type f -name "cnf*" -delete
+	@echo "ATP: $(ATP)"
+
+.PHONY: implication
+implication: $(TSTP_IMPL)
+	@find . -type f -name "cnf*" -delete
+	@echo "ATP: $(ATP)"
+
+.PHONY: biconditional
+biconditional: $(TSTP_BICOND)
+	@find . -type f -name "cnf*" -delete
+	@echo "ATP: $(ATP)"
+
+.PHONY: negation
+negation: $(TSTP_NEG)
+	@find . -type f -name "cnf*" -delete
+	@echo "ATP: $(ATP)"
+
 problems/basic/%.tstp: problems/basic/%.tptp
 	@echo $@
 	@$(ATP) $< > $@
