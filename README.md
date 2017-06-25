@@ -1,13 +1,15 @@
 # Prop-Pack [![DOI](https://zenodo.org/badge/85266317.svg)](https://zenodo.org/badge/latestdoi/85266317)
 
-This repository intents to be a collection of problems for propositional logic in
-[TPTP](http://www.cs.miami.edu/~tptp/TPTP/SyntaxBNF.html) format.
+*prop-pack* is a collection of [TPTP](http://www.cs.miami.edu/~tptp/TPTP/SyntaxBNF.html)
+problems and TSTP solutions in Classical Propositional Logic.
 
-* Download to preview all problems: [PDF Version][pdf]
+* Problems:          [PDF Version][tptp]
+* Metis's Solutions: [PDF Version][tstp]
 
-[pdf]: https://github.com/jonaprieto/prop-pack/releases/download/20170317/prop-pack.pdf
+[tptp]: https://github.com/jonaprieto/prop-pack/releases/download/v0.2/tptp.pdf
+[tstp]: https://github.com/jonaprieto/prop-pack/releases/download/v0.2/tstp.pdf
 
-The problems have been taken from:
+Many problems have been taken from:
 
   - Car Alastair. *[The Natural Deduction Pack][nd]*. 2007.
   <!-- - van Dalen, Dirk. \emph{Logic and Structure}. 4th ed. Springer, 2004. -->
