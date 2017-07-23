@@ -1,20 +1,20 @@
 # Prop-Pack [![DOI](https://zenodo.org/badge/85266317.svg)](https://zenodo.org/badge/latestdoi/85266317)
 
 *prop-pack* is a collection of [TPTP](http://www.cs.miami.edu/~tptp/TPTP/SyntaxBNF.html)
-problems and TSTP solutions in Classical Propositional Logic.
+problems in Classical Propositional Logic and their TSTP solutions.
 
 * Problems:          [PDF Version][tptp]
-* Metis's Solutions: [PDF Version][tstp]
+* Metis's solutions: [PDF Version][tstp]
 
 [tptp]: https://github.com/jonaprieto/prop-pack/releases/download/v0.2/tptp.pdf
 [tstp]: https://github.com/jonaprieto/prop-pack/releases/download/v0.2/tstp.pdf
 
-Many problems have been taken from:
+Many problems (almost everyone) have been taken from:
 
-  - Car Alastair. *[The Natural Deduction Pack][nd]*. 2007.
+  - Carr Alastair, (2017). *[The Natural Deduction Pack][nd]*.
   <!-- - van Dalen, Dirk. \emph{Logic and Structure}. 4th ed. Springer, 2004. -->
 
-[nd]: http://logicmanual.philosophy.ox.ac.uk/carr/NDpack.pdf
+[nd]: https://github.com/Alastair-Carr/Natural-Deduction-Pack
 
 
 ### Problems
@@ -250,11 +250,11 @@ Many problems have been taken from:
 [neg-32]: https://github.com/jonaprieto/ndpack/blob/master/problems/negation/neg-32.tptp
 
 
-### Compendium in PDF Format.
+### PDF Documents
 
 We provide two latex files:
 
-  - The problems in `tptp` format in `tptp.tex` file and,
-  - The solutions using [Metis][metis] ATP in `tstp` format in `tstp.tex`
+  - The problems in `tptp` file format are in the `tptp.tex` file and,
+  - Their solutions using [Metis][metis] Prover  `tstp` file format are in the `tstp.tex` file.
 
 [metis]: http://github.com/gilith/metis
