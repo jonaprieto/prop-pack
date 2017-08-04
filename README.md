@@ -95,7 +95,7 @@ Many problems (almost everyone) have been taken from:
 
   1. [ p ∨ q ⊢ q ∨ p ][disj-1]
   2. [ p ∨ q ⊢ p ∨ (q ∨ r) ][disj-2]
-  3. [ p ∨ (q ∨ r) ⊢ p ∨ (q ∨ r) ][disj-3]
+  3. [ (p ∨ q) ∨ r ⊢ p ∨ (q ∨ r) ][disj-3]
   4. [ (p ∨ q) ∨ (r ∨ p1) ⊢ (p ∨ p1) ∨ (r ∨ q) ][disj-4]
 
   *Mixed problems with conjunction*
