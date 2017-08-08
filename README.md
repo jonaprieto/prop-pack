@@ -3,6 +3,24 @@
 *prop-pack* is a collection of [TPTP](http://www.cs.miami.edu/¬tptp/TPTP/SyntaxBNF.html)
 problems and solutions in classical propositional logic.
 
+<!-- MarkdownTOC -->
+
+- [Compendiums of Problems and Solutions in PDF](#compendiums-of-problems-and-solutions-in-pdf)
+- [Problems](#problems)
+  - [Basics](#basics)
+  - [Conjunction](#conjunction)
+  - [Implication](#implication)
+  - [Disjunction](#disjunction)
+  - [Biconditional](#biconditional)
+  - [Negation](#negation)
+  - [Additional Propositional Problems](#additional-propositional-problems)
+- [References](#references)
+
+<!-- /MarkdownTOC -->
+
+
+### Compendiums of Problems and Solutions in PDF
+
 * Problems:  [PDF Version][tptp]
 
 [tptp]: https://github.com/jonaprieto/prop-pack/releases/download/v0.2/tptp.pdf
@@ -272,7 +290,7 @@ From Metis sources (some could be repeated from the lists above):
   20. [ ⊢ (¬ (¬ (p ⇔ q) ⇔ r)) ⇔ ¬ (p ⇔ ¬ (q ⇔ r)) ][prop-20]
   21. [ ⊢ ((p ∨ q ∨ r) ⋀ (p ∨ q ∨ ¬ r) ⋀ (p ∨ ¬ q ∨ r) ⋀ (p ∨ ¬ q ∨ ¬ r) ⋀
     (¬ p ∨ q ∨ r) ⋀ (¬ p ∨ q ∨ ¬ r) ⋀ (¬ p ∨ ¬ q ∨ r) ⋀
-    (¬ p ∨ ¬ q ∨ ¬ r)) ⇒ $false ][prop-21]
+    (¬ p ∨ ¬ q ∨ ¬ r)) ⇒ ⊥ ][prop-21]
   22. [ ⊢ (lit ⇒ clause) ⇒ ((lit ∨ clause) ⇔ clause) ][prop-22]
   23. [ ⊢ (¬ (p ⇔ q)) ⇒ ((p ⇒ ¬ q) ⋀ (q ⇒ ¬ p)) ][prop-23]
 
@@ -305,10 +323,7 @@ From Metis sources (some could be repeated from the lists above):
 Many problems have been taken from:
 
   - Carr Alastair, (2017). *[The Natural Deduction Pack][nd]*.
-  <!-- - van Dalen, Dirk. \emph{Logic and Structure}. 4th ed. Springer, 2004. -->
+  - Hurd, John. (2017). Metis Repository. [http://gihub.com/gilith/metis](metis)
 
 [nd]: https://github.com/Alastair-Carr/Natural-Deduction-Pack
-
-
-
 [metis]: http://github.com/gilith/metis
