@@ -1,6 +1,7 @@
 
 ATP ?= online-atps --atp=metis
 # ATP ?= metis --show proof
+# ATP ?=eprover --definitional-cnf=24 -s --proof-object --tptp3-format
 
 TPTP_BASIC := $(wildcard problems/basic/*.tptp)
 TSTP_BASIC := $(addprefix problems/basic/,$(notdir $(TPTP_BASIC:.tptp=.tstp)))
