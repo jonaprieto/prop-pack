@@ -20,13 +20,17 @@ TSTP_BICOND := $(addprefix problems/biconditional/,$(notdir $(TPTP_BICOND:.tptp=
 TPTP_NEG := $(wildcard problems/negation/*.tptp)
 TSTP_NEG := $(addprefix problems/negation/,$(notdir $(TPTP_NEG:.tptp=.tstp)))
 
+TPTP_PROP_METIS := $(wildcard problems/prop-metis/*.tptp)
+TSTP_PROP_METIS := $(addprefix problems/prop-metis/,$(notdir $(TPTP_PROP_METIS:.tptp=.tstp)))
+
 .PHONY: solutions
 solutions: $(TSTP_BASIC) \
 					 $(TSTP_CONJ)	\
 					 $(TSTP_DISJ) \
 					 $(TSTP_IMPL)	\
 					 $(TSTP_BICOND) \
-					 $(TSTP_NEG)
+					 $(TSTP_NEG) \
+					 $(TSTP_PROP_METIS)
 	@find . -type f -name "cnf*" -delete
 	@echo "ATP: ${ATP}"
 
@@ -60,6 +64,11 @@ negation: $(TSTP_NEG)
 	@find . -type f -name "cnf*" -delete
 	@echo "ATP: ${ATP}"
 
+.PHONY: prop-metis
+prop-metis: $(TSTP_PROP_METIS)
+	@find . -type f -name "cnf*" -delete
+	@echo "ATP: ${ATP}"
+
 problems/basic/%.tstp: problems/basic/%.tptp
 	@echo $@
 	@${ATP} $< > $@
@@ -84,6 +93,20 @@ problems/negation/%.tstp: problems/negation/%.tptp
 	@echo $@
 	@${ATP} $< > $@
 
+problems/prop-metis/%.tstp: problems/prop-metis/%.tptp
+	@echo $@
+	@${ATP} $< > $@
+
+
+.PHONY : tex
+tex :
+	make clean
+	latexmk -pdf tptp.tex
+	make solutions
+	latexmk -pdf tstp.tex
+	latexmk -c
+
+.PHONY : clean
 clean:
 	find . -type f -name "*.aux" -delete
 	find . -type f -name "*.DS_Store" -delete
@@ -99,3 +122,7 @@ clean:
 	find . -type f -name "*.synctex.gz(busy)" -delete
 	find . -type f -name "*.toc" -delete
 	find . -type f -name "*.tstp" -delete
+
+.PHONY : default
+default :
+	make tex
