@@ -1,5 +1,5 @@
 % -----------------------------------------------------------------------------
-fof(ALL_3_CLAUSES, conjecture,
+fof(all_3_clauses, conjecture,
    ((p | q | r) & (p | q | ~ r) & (p | ~ q | r) & (p | ~ q | ~ r) &
     (~ p | q | r) & (~ p | q | ~ r) & (~ p | ~ q | r) &
     (~ p | ~ q | ~ r)) => $false ).

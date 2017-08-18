@@ -1,2 +1,2 @@
 % -----------------------------------------------------------------------------
-fof(MATHS4_EXAMPLE, conjecture, (((a | ~ k) => g) & (g => q) & ~ q) => k).
+fof(maths4_example, conjecture, (((a | ~ k) => g) & (g => q) & ~ q) => k).
