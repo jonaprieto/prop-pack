@@ -24,6 +24,10 @@ TSTP_NEG := $(addprefix problems/negation/,$(notdir $(TPTP_NEG:.tptp=.tstp)))
 TPTP_PROP_METIS := $(wildcard problems/prop-metis/*.tptp)
 TSTP_PROP_METIS := $(addprefix problems/prop-metis/,$(notdir $(TPTP_PROP_METIS:.tptp=.tstp)))
 
+.PHONY : default
+default :
+	make tex
+	
 .PHONY: solutions
 solutions: $(TSTP_BASIC) \
 					 $(TSTP_CONJ)	\
@@ -124,6 +128,4 @@ clean:
 	find . -type f -name "*.toc" -delete
 	find . -type f -name "*.tstp" -delete
 
-.PHONY : default
-default :
-	make tex
+
