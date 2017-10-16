@@ -27,7 +27,7 @@ TSTP_PROP_METIS := $(addprefix problems/prop-metis/,$(notdir $(TPTP_PROP_METIS:.
 .PHONY : default
 default :
 	make tex
-	
+
 .PHONY: solutions
 solutions: $(TSTP_BASIC) \
 					 $(TSTP_CONJ)	\
@@ -113,6 +113,7 @@ tex :
 
 .PHONY : clean
 clean:
+	find . -type f -name "*.agda" -delete
 	find . -type f -name "*.aux" -delete
 	find . -type f -name "*.DS_Store" -delete
 	find . -type f -name "*.dvi" -delete
